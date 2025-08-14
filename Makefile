@@ -9,6 +9,7 @@ EMFLAGS = -O2 -DPLATFORM_WEB -s USE_GLFW=3 -s ASYNCIFY \
           -s TOTAL_MEMORY=67108864 -s ALLOW_MEMORY_GROWTH=1 \
           -s FORCE_FILESYSTEM=1
 RAYLIB_WEB_A = libraylib.web.a
+GITHUB_PAGES = pages
 
 
 
@@ -19,7 +20,7 @@ web:
 	$(EMCC) $(EMFLAGS) $(include) \
 		$(src)/main.cpp $(RAYLIB_WEB_A) \
 		$(RAYLIB_INCLUDE) \
-		-o $(build)/index.html
+		-o $(GITHUB_PAGES)/index.html
 
 main.o: build
 	$(CC) $(FLAGS) $(include) -c $(src)/main.cpp -o $(build)/main.o 
