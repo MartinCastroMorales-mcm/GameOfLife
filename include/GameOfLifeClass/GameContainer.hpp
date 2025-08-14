@@ -204,6 +204,10 @@ public:
 
     return result;
   }
+  void resetGame() {
+    listOfSquares.clear();
+    startGame();
+  }
   std::vector<Square>* getListOfSquares() { return &this->listOfSquares; }
   int getWidth() { return this->width; }
   int getHeight() { return this->height; }
@@ -216,10 +220,10 @@ private:
   // std::map<std::pair<int, int>, Square*> grid;
   std::vector<Square> listOfSquares;
 };
-
-#endif
 /* ------------------------------------------------------------------
 //map is a tree, forget the vector and use only the map, for next turn do an
 inorder. just use a vector, the board will be full anyways. and you will check
 every square anyways.
 -------------------------------------------------------------------*/
+
+#endif

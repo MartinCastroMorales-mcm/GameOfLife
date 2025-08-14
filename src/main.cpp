@@ -114,6 +114,12 @@ void GameLoop(GameContainer gc) {
         // Button was clicked
         startGame = true;
       }
+    }else {
+      if (GuiButton(bounds, "reset")) {
+        // Button was clicked
+        gc.resetGame();
+        startGame = false;
+      }
     }
 
     EndDrawing();
