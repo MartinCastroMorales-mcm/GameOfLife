@@ -1,6 +1,8 @@
 Esta es mi version del juego de la vida en raylib.
 
 
+version wasm: https://martincastromorales-mcm.github.io/GameOfLife/
+
 Reglas
 Cada cuadrado es blanco si esta muerto y rojo si esta vivo.
 Se consideran las diagonales.
