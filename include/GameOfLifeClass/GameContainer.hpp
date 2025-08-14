@@ -191,6 +191,7 @@ public:
       result.setError("out of bounds");
       return result;
     }
+    
     if (y < 0) {
       result.setError("out of bounds");
       return result;
